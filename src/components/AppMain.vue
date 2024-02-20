@@ -1,7 +1,7 @@
 <template>
-    <div class="mb-3">
-        <ul>
-            <li v-for="project in projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-3" v-for="project in projects">
                 <div class="card" style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">{{ project.project_name }}</li>
@@ -9,8 +9,8 @@
                         <li class="list-group-item">{{ project.status = 0 ? 'in corso' : 'finito' }}</li>
                     </ul>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </template>
 

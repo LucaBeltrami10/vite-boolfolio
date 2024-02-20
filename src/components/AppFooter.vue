@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-3">
+    <div class="mb-3 text-center">
         Footer
     </div>
 </template>
