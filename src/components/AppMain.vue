@@ -29,8 +29,8 @@ export default {
             axios.get('http://127.0.0.1:8000/api/projects')
                 .then((response) => {
                     // handle success
-                    this.projects = response.data;
-                    console.log(response.data);
+                    this.projects = response.data.results;
+                    console.log(response.data.results);
                 })
                 .catch(function (error) {
                     // handle error
