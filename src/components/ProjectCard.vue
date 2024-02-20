@@ -4,6 +4,9 @@
             <li class="list-group-item">{{ project.project_name }}</li>
             <li class="list-group-item">{{ project.description }}</li>
             <li class="list-group-item">{{ project.status = 0 ? 'in corso' : 'finito' }}</li>
+            <li class="list-group-item">{{ project.type.type }}</li>
+            <li class="list-group-item">{{ project.technologies }}
+            </li>
         </ul>
     </div>
 </template> 
