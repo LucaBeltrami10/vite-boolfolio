@@ -1,7 +1,9 @@
 <template>
-    <div class="mb-3 text-center">
-        Footer
-    </div>
+    <footer>
+        <div class="mb-3 text-center">
+            Footer
+        </div>
+    </footer>
 </template>
 
 <script>

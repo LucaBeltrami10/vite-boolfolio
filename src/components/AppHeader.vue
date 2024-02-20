@@ -1,7 +1,9 @@
 <template>
-    <div class="mb-3 text-center">
-        Header
-    </div>
+    <header>
+        <div class="mb-3 text-center">
+            Header
+        </div>
+    </header>
 </template>
 
 <script>
