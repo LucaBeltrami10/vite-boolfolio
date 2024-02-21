@@ -18,9 +18,10 @@ export default {
 
 <template>
   <AppHeader />
+
   <router-view>
-    <ProjectsList />
   </router-view>
+
   <AppFooter />
 </template>
 
