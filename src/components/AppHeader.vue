@@ -1,7 +1,7 @@
 <template>
     <header>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body mb-4" data-bs-theme="dark">
             <div class=" container-fluid">
                 <a class="navbar-brand" href="#">Boolfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
