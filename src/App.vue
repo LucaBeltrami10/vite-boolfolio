@@ -1,15 +1,15 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppProjects from './pages/AppProjects.vue';
-import AppHome from './pages/AppHome.vue';
-import AppTechnologies from './pages/AppTechnologies.vue';
+import ProjectsList from './pages/ProjectsList.vue';
+import HomePage from './pages/HomePage.vue';
+import TechnologiesList from './pages/TechnologiesList.vue';
 import AppFooter from './components/AppFooter.vue';
 export default {
   components: {
     AppHeader,
-    AppHome,
-    AppProjects,
-    AppTechnologies,
+    HomePage,
+    ProjectsList,
+    TechnologiesList,
     AppFooter,
 
   }
@@ -18,7 +18,9 @@ export default {
 
 <template>
   <AppHeader />
-  <AppProjects />
+  <router-view>
+    <ProjectsList />
+  </router-view>
   <AppFooter />
 </template>
 
