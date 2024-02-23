@@ -6,6 +6,7 @@ import TechnologiesList from './pages/TechnologiesList.vue';
 import ProjectShow from './pages/ProjectShow.vue';
 import AppFooter from './components/AppFooter.vue';
 export default {
+
   components: {
     AppHeader,
     HomePage,
@@ -13,12 +14,42 @@ export default {
     TechnologiesList,
     AppFooter,
     ProjectShow,
-  }
+  },
+  data() {
+    return {
+
+      navElements: [
+        {
+          element: 'Home',
+          routeName: 'home',
+        },
+        {
+          element: 'Progetti',
+          routeName: 'projects',
+        },
+        {
+          element: 'Tecnologie',
+          routeName: 'technologies',
+        },
+        {
+          element: 'Contattaci',
+          routeName: 'contact-us',
+        },
+      ]
+
+    };
+  },
+  methods: {
+
+  },
+  mounted() {
+
+  },
 }
 </script>
 
 <template>
-  <AppHeader />
+  <AppHeader :navElements="navElements" />
 
   <router-view>
   </router-view>

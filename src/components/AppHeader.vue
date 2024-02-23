@@ -10,7 +10,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+
+                        <li class="nav-item" v-for="navElement, index in navElements" :key="navElement.id">
+
+                            <!-- <router-link :to="{ name: navElement.routeName }" class="nav-link">
+                                {{ navElement.element }}
+                            </router-link> -->
+                            <router-link :to="{ name: navElement.routeName != null ? navElement.routeName : '' }"
+                                class="nav-link">
+                                {{ navElement.element }}
+                            </router-link>
+                        </li>
+
+                        <!-- <li class="nav-item">
                             <router-link :to="{ name: 'home' }" class="nav-link">
                                 Home
                             </router-link>
@@ -26,7 +38,7 @@
                             <router-link :to="{ name: 'technologies' }" class="nav-link">
                                 Tecnologie
                             </router-link>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -36,6 +48,12 @@
 
 <script>
 export default {
+    props: {
+        navElements: {
+            type: Array,
+            required: true
+        },
+    }
 
 }
 </script>
