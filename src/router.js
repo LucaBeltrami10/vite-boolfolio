@@ -27,6 +27,11 @@ const router = createRouter({
             name: 'project-show',
             component: ProjectShow,
         },
+        {
+            path: '/contat-us',
+            name: 'contact-us',
+            component: ProjectShow,
+        },
     ],
 });
 
