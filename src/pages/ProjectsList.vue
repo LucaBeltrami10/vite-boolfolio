@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-3" v-for="project in projects">
-                    <ProjectCard :project="project" />
+                    <ProjectCard :project="project" :linkRoute="{ name: 'project-show', params: { id: project.id } }" />
                 </div>
             </div>
         </div>
